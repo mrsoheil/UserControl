@@ -1,4 +1,4 @@
-<%--
+<%@ page import="sun.misc.Request" %><%--
   Created by IntelliJ IDEA.
   User: Administrator
   Date: 10/20/2018
@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Welcome <%out.print(request.getAttribute("fullname")); %></title>
 </head>
 <body>
-
+<h1>Welcome <%out.print(request.getAttribute("fullname")); %></h1>
 </body>
 </html>
